@@ -13,7 +13,7 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
-  list-style: none; /* Убираем маркеры списка */
+  list-style: none;
 }
 
 body {
@@ -33,7 +33,7 @@ img {
 
 .container {
   max-width: 320px;
-  padding: 16px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .main-menu {
@@ -149,6 +149,7 @@ img {
 .burger-button {
   border: none;
   background-color: transparent;
+  padding: 16px 0;
 }
 
 .burger-icon {
