@@ -31,6 +31,10 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   max-width: 320px;
   padding: 0 16px;
@@ -71,7 +75,18 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  /* margin-right: 76px; */
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
 }
 
 .main-menu {
@@ -123,22 +138,37 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Список контактов */
+
+@media screen and (min-width: 768px) {
 .contact-list {
   list-style: none;
-  font-style: normal;
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
 }
+}
+
+@media screen and (min-width: 1158px) {
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  }
 
 /* Ссылки контактов */
 .contact-link {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1158px) {
+  .contact-link {
+    font-size: 16px;
+  }
 }
 
 .contact-link:hover,
@@ -174,28 +204,49 @@ img {
 
 /* Секция # 1 "Hero" */
 .hero {
-  margin: 0 auto;
-  padding: 188px 0;
+  margin: 0 auto; 
+  /* padding: 188px 0; */
+  padding: 72px 0;
   max-width: 1440px;
-  min-height: 600px;
+  min-height: 432px;
+  /* min-height: 600px; */
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/people-office.jpg"); /* Фоновое изображение */
+    url("../images/people-office1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+/* @media (min-resolution: 192dpi) {
+  .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/people-office2x.jpg");
+  } */
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/people-office0.jpg");
+    }
+  }
+
+
 .hero-title {
   text-align: center;
   margin: 0 auto;
-  max-width: 496px;
+  max-width: 216px;
+  /* max-width: 496px; */
   color: #fff;
-  font-size: 56px;
+  font-size: 36px;
+  /* font-size: 56px; */
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+  /* margin-bottom: 48px; */
 }
 
 .button {
