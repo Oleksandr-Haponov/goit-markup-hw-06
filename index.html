@@ -55,15 +55,13 @@
           </ul>
         </address>
         <button class="burger-button" type="button" data-menu-open>
-          <svg class="burger-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
+          <img src="./images/heroicons-solid_menu.svg" width="24" height="24" />
         </button>
       </div>
     </header>
     <main>
       <!-- Секция # 1 "Hero" -->
-<section class="hero">
+      <section class="hero">
         <div class="hero-overlay">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
@@ -128,14 +126,18 @@
       </section>
 
       <!-- Секция #3 "Our team" -->
-      <!-- <section class="team">
-        <div class="container">
+      <section class="team">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/img.jpg"
+                srcset="
+                  ./images/mark-guerrero-desk-1x.jpg 1x,
+                  ./images/mark-guerrero-desk-2x.jpg 2x
+                "
+                src="./images/mark-guerrero-desk-1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -177,8 +179,13 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/img-2.jpg"
-                alt="Tom Ford"
+                srcset="
+                  ./images/tom-ford-desk-1x.jpg 1x,
+                  ./images/tom-ford-desk-2x.jpg 2x
+                "
+                src="./images/tom-ford-desk-1x.jpg"
+                alt="Tom
+              Ford"
                 width="264"
               />
               <div class="team-text">
@@ -219,7 +226,11 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/img-3.jpg"
+                srcset="
+                  ./images/camila-garcia-desk-1x.jpg 1x,
+                  ./images/camila-garcia-desk-2x.jpg 2x
+                "
+                src="./images/camila-garcia-desk-1x.jpg 1x"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -261,7 +272,11 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/img-4.jpg"
+                srcset="
+                  ./images/daniel-wilson-desk-1x.jpg 1x,
+                  ./images/daniel-wilson-desk-2x.jpg 2x
+                "
+                src="./images/daniel-wilson-desk-1x.jpg 1x"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -302,10 +317,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция #4 "Portfolio" -->
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -313,7 +328,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-1.jpg"
+                  srcset="
+                    ./images/card1-mob-1x.jpg 1x,
+                    ./images/card1-mob-2x.jpg 2x
+                  "
+                  src="./images/card1-mob-1x.jpg"
                   alt="Banking App"
                   width="360"
                 />
@@ -332,7 +351,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-2.jpg"
+                  srcset="
+                    ./images/card2-mob-1x.jpg 1x,
+                    ./images/card2-mob-2x.jpg 2x
+                  "
+                  src="./images/card2-mob-1x.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -351,7 +374,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-3.jpg"
+                  srcset="
+                    ./images/card3-mob-1x.jpg 1x,
+                    ./images/card3-mob-2x.jpg 2x
+                  "
+                  src="./images/card3-mob-1x.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -370,7 +397,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-4.jpg"
+                  srcset="
+                    ./images/card4-mob-1x.jpg 1x,
+                    ./images/card4-mob-2x.jpg 2x
+                  "
+                  src="./images/card4-mob-1x.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -389,7 +420,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-5.jpg"
+                  srcset="
+                    ./images/card5-mob-1x.jpg 1x,
+                    ./images/card5-mob-2x.jpg 2x
+                  "
+                  src="./images/card5-mob-1x.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -408,7 +443,11 @@
               <div class="portfolio-container">
                 <img
                   class="portfolio-photo"
-                  src="./images/product-6.jpg"
+                  srcset="
+                    ./images/card6-mob-1x.jpg 1x,
+                    ./images/card6-mob-2x.jpg 2x
+                  "
+                  src="./images/card6-mob-1x.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -425,11 +464,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-info">
           <a href="/" class="footer-logo">
@@ -496,9 +535,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop">
-      <div class="container modal">
+    </footer>
+    <div class="backdrop">
+      <div class="modal">
         <button class="close" type="button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
@@ -570,13 +609,83 @@
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a href="" class="checkbox-link">Privacy Policy</a>
+              ><span
+                >I accept the terms and conditions of the
+                <a href="" class="checkbox-link">Privacy Policy</a></span
+              >
             </label>
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <div class="menu">
+      <div class="menu-container">
+        <button class="close-mob" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul>
+            <li class="menu-mob">
+              <a href="#" class="menu-link-mob current-mob">Studio</a>
+            </li>
+            <li class="menu-mob">
+              <a href="#" class="menu-link-mob">Portfolio</a>
+            </li>
+            <li class="menu-mob">
+              <a href="#" class="menu-link-mob">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="group">
+          <address class="contact-mob">
+            <ul>
+              <li class="item-mob">
+                <a href="tel:+1234567890" class="contact-link-mob mob-tel"
+                  >+1 234 567 890</a
+                >
+              </li>
+              <li class="item-mob">
+                <a href="mailto:info@example.com" class="contact-link-mob"
+                  >info@example.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="footer-social-list mob-social">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
